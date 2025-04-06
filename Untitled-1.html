@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Bradley's Site</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      margin: 0;
+      background-image: url(milad-fakurian-NKgh9nPRWbE-unsplash.jpg);
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+    header {
+      text-align: center;
+      padding: 20px 10px;
+      background-color: rgba(7, 1, 1, 0.6);
+    }
+    header h1 {
+      font-size: 3rem;
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    .logo {
+      width: 120px;
+      margin-top: 10px;
+    }
+    nav {
+      background-color: #0A2F67;
+      padding: 10px 20px;
+      text-align: center;
+    }
+    nav ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
+    nav li {
+      display: inline;
+      margin: 0 15px;
+    }
+    nav a {
+      color: rgb(12, 5, 5);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+    nav a:hover {
+      background-color: #1e3d91;
+      color: #fff;
+    }
+    section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 20px;
+      justify-content: space-between;
+      flex-grow: 1;
+    }
+    .column, .column1 {
+      flex: 1;
+      margin: 15px;
+      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-radius: 8px;
+      backdrop-filter: blur(8px);
+    }
+    .column h2, .column1 h2 {
+      color: #e0e0e0;
+      font-size: 1.5rem;
+    }
+    .photo {
+      width: 150px;
+      height: auto;
+      border-radius: 10px;
+      transition: transform 0.4s ease;
+      margin: 5px;
+    }
+    .photo:hover {
+      transform: scale(1.1);
+      border: 2px solid #fff;
+    }
+    .image-placeholder {
+      margin-bottom: 15px;
+      text-align: center;
+    }
+    .image {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+    .image img {
+      width: 140px;
+      height: auto;
+      border-radius: 8px;
+    }
+    footer {
+      background-color: #111;
+      color: #ccc;
+      text-align: center;
+      padding: 20px;
+    }
+    p {
+      font-size: 16px;
+      color: #f5f5f5;
+      font-style: italic;
+    }
+    b {
+      color: #ff7f50;
+    }
+    label {
+      font-weight: bold;
+      color: #ff7f50;
+    }
+
+    .side-container {
+      display: flex;
+      justify-content: center;
+    }
+
+    .side-box {
+      background-color: rgba(0, 0, 0, 0.65);
+      color: white;
+      padding: 15px;
+      border-radius: 10px;
+      font-size: 14px;
+      box-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+      margin-bottom: 20px;
+      width: 250px;
+      text-align: center;
+    }
+    .side-box h3 {
+      margin-top: 0;
+      color: #ff7f50;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome To My Blog</h1>
+    <img src="read.webp" alt="Logo" class="logo">
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="Website.html">Home</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section>
+    <div class="column1">
+      <h2>About Me</h2>
+      <p>Photo of me:</p>
+      <div class="image-placeholder">
+        <img src="cutei.jpg" alt="Bradley's Photo" class="photo">
+      </div>
+      <p>My Name is Bradley<br> 1st-year course in Bachelor of Science in Information Technology</p>
+
+      <h2>More Photos</h2>
+      <p>Hobby</p>
+      <div class="image">
+        <img src="th.jfif" alt="Image 1" class="photo">
+        <img src="code-1839406_1280.jpg" alt="Image 2" class="photo">
+        <img src="eawer.jfif" alt="Image 3" class="photo">
+      </div>
+      <br>
+      <label for="personal-info">Personal Information</label><br>
+      <p><b>Address: </b>Cabu purok bonifacio 6, Cabanatuan City, N.E</p>
+      <p><b>Age: </b>19 years old</p>
+      <p><b>Sex: </b>Male</p>
+      <p><b>Height: </b>168 cm</p>
+      <p><b>Weight: </b>55 kg</p>
+      <p><b>Nationality: </b>Filipino</p>
+    </div>
+
+    <div class="column">
+      <h2>My School</h2>
+      <p>College for Research and Technology</p>
+      <div class="crt">
+        <img src="img-010.webp" alt="College Image" class="photo">
+      </div>
+      <p>The College for Research and Technology of Cabanatuan (CRT) started as a computer school and has been known to be the first computer school in Nueva Ecija.</p>
+      <br>
+      <h2>My Course</h2>
+      <p>Bachelor of Science in Information Technology</p>
+      <div class="image-placeholder">
+        <img src="Info-Website-19.jpg" alt="Course Image" class="photo">
+      </div>
+      <p>A Bachelor of Science in Information Technology (BSIT) is a four-year degree program that prepares students for a career in the technology industry. The curriculum typically includes subjects in computer science, programming, networking, cybersecurity, and database management.</p>
+    </div>
+  </section>
+
+  <div class="side-container">
+    <aside class="side-box">
+      <h3>More Info</h3>
+      <p><b>Email:</b> bradleymasipag.com</p>
+      <p><b>Hobby:</b> Gaming & Coding & sleeping</p>
+      <p><b>Favorite Quote:</b><br>"Code is like humor. When you have to explain it, it’s bad."</p>
+    </aside>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 All Rights Reserved. Created by Bradley.</p>
+  </footer>
+</body>
+</html>
